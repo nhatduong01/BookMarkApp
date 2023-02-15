@@ -10,5 +10,9 @@ services:
       POSTGRES_DB: bookmarkAPI
     networks:
       - bookmarkAPI
+    volumes:
+      - bookmarkAPI-data:/var/lib/postgresql/data
 networks:
   bookmarkAPI:
+volumes:
+ bookmarkAPI-data:
